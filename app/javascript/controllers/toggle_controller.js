@@ -1,18 +1,14 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static classes = [ 'hidden', 'highlight' ]
-  static targets = [ 'highlightable', 'showable', 'button' ]
+  static classes = [ 'change' ]
+  static targets = [ 'toggleable', 'button' ]
 
   connect() {
   }
 
-  hide() {
-    this.showableTargets.forEach((element) => element.classList.toggle(this.hiddenClass))
-  }
-
-  highlight() {
-    this.highlightableTargets.forEach((element) => element.classList.toggle(this.highlightClass))
+  toggle() {
+    this.toggleableTargets.forEach((element) => element.classList.toggle(this.changeClass))
   }
 
   changeDescription() {
