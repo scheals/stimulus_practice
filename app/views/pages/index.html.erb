@@ -4,12 +4,15 @@
 </div>
 
 <div data-controller='toggle' data-toggle-hidden-class = 'hidden' data-toggle-shown-class = 'shown'>
-<p data-toggle-target='showable'>I am a beautiful paragraph.</p>
-<p data-toggle-target='showable'>I am a beautiful paragraph.</p>
-<p data-toggle-target='showable' class='hidden'>I am a beautiful paragraph that was hidden.</p>
-<button data-toggle-target='button' data-toggle-type-param data-action='click->toggle#hide click->toggle#changeDescription'>Hide element</button>
+  <p data-toggle-target='showable'>I am a beautiful paragraph.</p>
+  <p data-toggle-target='showable'>I am a beautiful paragraph.</p>
+  <p data-toggle-target='showable' class='hidden'>I am a beautiful paragraph that was hidden.</p>
+  <button data-toggle-target='button' data-toggle-type-param data-action='click->toggle#hide click->toggle#changeDescription'>Hide element</button>
 </div>
-<div data-controller='toggle' data-toggle-highlight-class = 'highlight'>
-<p data-toggle-target='highlightable'>I am a beautiful paragraph that can be highlighted.</p>
-<button data-toggle-target='button' data-toggle-type-param data-action='click->toggle#highlight'>Toggle highlight</button>
+<div data-controller='toggle' data-toggle-highlight-class = 'highlight' id='highlightable'>
+  <p data-toggle-target='highlightable'>I am a beautiful paragraph that can be highlighted.</p>
+  <div>
+    <input type='checkbox' id='highlight' name='highlight' data-toggle-type-param data-action='click->toggle#highlight'>
+    <label for="highlight">Highlight</label>
+  </div>
 </div>

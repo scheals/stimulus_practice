@@ -21,3 +21,11 @@
 .highlight {
     background-color: hsl(330deg, 30%, 50%, 0.5);
 }
+
+#highlightable,
+#highlightable>div {
+    display: flex;
+}
+#highlightable>div {
+    align-items: center;
+}
